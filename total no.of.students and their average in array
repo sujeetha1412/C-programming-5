@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+   float marks[100],tot=0.0,avg;
+   int n,i;
+   printf("Enter the total no.of.students:");
+   scanf("%d",&n);
+   printf("Enter the marks:\n");
+   for(i=0;i<n;i++)
+   {
+      scanf("%f",&marks[i]);
+   }
+   printf("The marks are:");
+   for(i=0;i<n;i++)
+   {
+      printf("%f \t",marks[i]);
+   }
+   for(i=0;i<n;i++)
+   {
+      tot=tot+marks[i];
+   }
+   avg=tot/n;
+   printf("\naverage=%f\ntotal=%f",avg,tot);
+   return 0;
+}
